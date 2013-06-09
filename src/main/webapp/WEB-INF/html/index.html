@@ -1,22 +1,30 @@
 <!doctype html>
-<html lang="en" ng-app="AngularSpringApp">
+<html lang="en" ng-app="dc">
 <head>
     <meta charset="utf-8">
-    <title>Service App</title>
-    <link rel="stylesheet" href="resources/css/app.css"/>
-    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
+    <title>Datacart Professional</title>
+    <link rel="stylesheet" href="/resources/css/app.css"/>
+    <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css"/>
 </head>
 <body>
-<div id="wrapper">
-
-    <ul class="menu">
-        <li><a href="#/cars">Cars</a></li>
-    </ul>
-    <hr class="" />
-    <div ng-view></div>
-
+<div class="container">
+    <div class="navbar">
+        <ul class="nav">
+            <li class="active"><a href="#/users">Individuals</a></li>
+            <li><a href="#/encounters">Encounters</a></li>
+            <li><a href="#/classes">Classes</a></li>
+            <li><a href="#/memberships">Memberships</a></li>
+            <li><a href="#/roles">Roles</a></li>
+            <li><a href="#/structure">Structure</a></li>
+            <li><a href="#/dictionary">Dictionary</a></li>
+            <li><a href="#/signatures">Signatures</a></li>
+            <li><a href="#/okay">Okay</a></li>
+            <li><a href="#/quit">Quit</a></li>
+        </ul>
+    </div>
 </div>
 
-<script src="resources/js/lib/angular/angular.js"></script>
+<script src="/resources/js/lib/angular/angular.js"></script>
+<script src="/resources/js/app.js"></script>
 </body>
 </html>
