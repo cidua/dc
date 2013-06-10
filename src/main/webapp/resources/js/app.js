@@ -7,7 +7,7 @@
 
 var dc = {};
 
-var App = angular.module('dc');
+var App = angular.module('dc', ['dc.filters', 'dc.services', 'dc.directives']);
 
 // Declare app level module which depends on filters, and services
 App.config(['$routeProvider', function ($routeProvider) {
@@ -16,15 +16,5 @@ App.config(['$routeProvider', function ($routeProvider) {
         controller: UserController
     });
 
-//    $routeProvider.when('/trains', {
-//        templateUrl: 'trains/layout',
-//        controller: TrainController
-//    });
-//
-//    $routeProvider.when('/railwaystations', {
-//        templateUrl: 'railwaystations/layout',
-//        controller: RailwayStationController
-//    });
-
-    $routeProvider.otherwise({redirectTo: '/users'});
+//    $routeProvider.otherwise({redirectTo: '/users'});
 }]);

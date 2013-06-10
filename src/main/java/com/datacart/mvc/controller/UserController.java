@@ -24,4 +24,9 @@ public class UserController {
 
 		return userBinding;
 	}
+
+	@RequestMapping("/layout")
+	public String getCarPartialPage() {
+		return "users/layout";
+	}
 }
