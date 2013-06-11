@@ -16,5 +16,9 @@ App.config(['$routeProvider', function ($routeProvider) {
         controller: UserController
     });
 
+	$routeProvider.when('/subscription', {
+		templateUrl: 'subscription/layout',
+		controller: Subscription
+	});
 //    $routeProvider.otherwise({redirectTo: '/users'});
 }]);

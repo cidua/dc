@@ -5,7 +5,7 @@
  * since 1.0
  */
 
-var subscription = function ($scope, $http) {
+var Subscription = function ($scope, $http) {
     $scope.userData = {};
 
     $scope.subscribe = function (userData) {

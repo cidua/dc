@@ -31,9 +31,9 @@ public class SubscriptionController {
 		userRepository.save(user);
 	}
 
-	@RequestMapping("/subscription")
-	public String getSubscriptionPage() {
-		return "/layout";
+	@RequestMapping("/layout")
+	public String getSubscriptionPartialPage() {
+		return "subscription/layout";
 	}
 
 }
